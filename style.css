@@ -9,25 +9,18 @@ body{
 }
 
 .cell{
+    box-sizing: border-box;
     border: 1px solid black;
-    width: 30px;
-    height: 30px;
 }
 
-.col{
-    width: 30px;
-    border: 1px solid black;
-}
+
 
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    height: 720px;
-    width: 720px;
-    /* background-color: burlywood; */
+    display: flex;  /* for the 0th row construction */
+    background-color: burlywood;
     padding: 0;
-    
+    width: 500px;
+    height: 500px;
 }
 
 
