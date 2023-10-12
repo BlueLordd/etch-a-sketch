@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'VT323', monospace;
+}
 
 body{
     display: flex;
@@ -6,23 +8,128 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: linear-gradient(-45deg, #e2592f, #dd1964, #0faee7, #16d861);
+}
+
+h1{
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px white;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .cell{
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 0.5px solid gray; */
 }
-
-
 
 .container{
     display: flex;  /* for the 0th row construction */
-    background-color: burlywood;
     padding: 0;
-    width: 500px;
+    width: 600px;
     height: 500px;
+    background-color: whitesmoke;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 10px 10px;
+    cursor: crosshair;
 }
 
+.content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
 
+.content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 300px;
+}
 
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.slider-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#slider {
+    margin-right: 10px; 
+}
+
+.content-right .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 17px;
+    background: black;
+    border-radius: 10px;
+}
+
+button{
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: 4px 4px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 2px;
+}
+button:hover{
+    height: 35px;
+    width: 75px;
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+#rgb{
+    background: linear-gradient(-45deg, #e2592f, #dd1964, #0faee7, #16d861);
+    color: white;
+    box-shadow: 4px 4px black;
+}
+#rgb:hover{
+    font-weight: bold;
+}
+
+#colorPicker{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+#colorPicker:hover{
+    width: 45px;
+    height: 45px;
+}
+
+/* .footer{
+    height: 15px;
+    margin-bottom: 0;
+    margin-left: auto;
+
+}
+.footer p{
+    font-style: italic;
+    text-align: right;
+    font-size: small;
+} */
