@@ -6,13 +6,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    gap: 30px;
+    min-height: 100vh;
     margin: 0;
     background: linear-gradient(-45deg, #e2592f, #dd1964, #0faee7, #16d861);
 }
 
 h1{
-    font-size: 40px;
+    font-size: 35px;
     color: black;
     text-shadow: 2px 2px white;
     font-family: 'Press Start 2P', cursive;
@@ -20,14 +21,14 @@ h1{
 
 .cell{
     box-sizing: border-box;
-    /* border: 0.5px solid gray; */
+    border: 0.3px solid lightgray;
 }
 
 .container{
     display: flex;  /* for the 0th row construction */
     padding: 0;
-    width: 600px;
-    height: 500px;
+    width: 550px;
+    height: 450px;
     background-color: whitesmoke;
     border: 5px solid white;
     border-radius: 5px;
@@ -39,8 +40,7 @@ h1{
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-around;
 }
 
 .content-right{
@@ -48,8 +48,14 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     width: 300px;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px;
+    font-size: 12px;
 }
 
 .top {
@@ -85,20 +91,21 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 button{
-    height: 30px;
-    width: 70px;
-    border-radius: 10px;
+    height: 25px;
+    width: 60px;
+    border-radius: 7px;
     box-shadow: 4px 4px;
-    font-size: 15px;
+    font-size: 12px;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
     padding: 2px;
+    border: none;
+    background-color: lightblue;
 }
 button:hover{
-    height: 35px;
-    width: 75px;
-    font-size: 18px;
+    transform: scale(1.1);
     font-weight: bold;
-    color: blue;
+    color: rgb(43, 43, 181);
+    cursor: pointer;
 }
 #rgb{
     background: linear-gradient(-45deg, #e2592f, #dd1964, #0faee7, #16d861);
@@ -118,10 +125,10 @@ button:hover{
     margin-top: 20px;
 }
 #colorPicker:hover{
-    width: 45px;
-    height: 45px;
+    cursor: pointer;
 }
 
 .footer{
-    margin-top: 20px;
+    margin-top: auto;
 }
+

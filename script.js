@@ -1,6 +1,6 @@
 let container= document.querySelector(".container");
-const containerWidth= "600px";
-const containerHeight= "500px";
+const containerWidth= "550px";
+const containerHeight= "450px";
 let userInput=64;
 let cellColor;
 
